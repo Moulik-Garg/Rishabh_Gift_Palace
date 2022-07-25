@@ -1,0 +1,246 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: beige;
+}
+
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* Navigation bar */
+#navbar{
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+
+#navbar::before {
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255 176 176);
+}
+
+#navbar ul li a:hover {
+
+    color: rgb(255, 255, 255);
+}
+
+/* homesection */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    width: 100%;
+    height: 691px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(home.jpg) no-repeat center center;
+    position: absolute;
+    top: 0px;
+    /* left: 0px; */
+    width: 100%;
+    height: 785px;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1 {
+    position: relative;
+    left: 200px;
+    color: white;
+    text-align: center;
+
+}
+
+#home p {
+    position: relative;
+    left: 200px;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+.h_primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+.h-secondary {
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+.btn {
+    position: relative;
+    left: 200px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 15px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    margin: 5px 5px;
+    padding: 2px 5px;
+}
+
+/* services */
+#services {
+
+    display: flex;
+}
+
+#services .box {
+
+    background-color: rgb(254, 233, 233);
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 2px;
+}
+
+#services .box {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#services .box img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#brands-section {
+    position: relative;
+    height: 400px;
+    /* border: 2px solid brown; */
+}
+
+#brands-section::before {
+    content: "";
+    position: absolute;
+    background: url(bg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.3;
+
+}
+
+#brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brands img {
+    height: 80px;
+    margin: 20px;
+    padding: 5px 4px;
+}
+#brands img {
+    height: 80px;
+    margin: 20px;
+    padding: 5px 4px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('4.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#contact-box form{
+   width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Gentium Book Plus', serif;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
